@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'poc-oauth-ui';
+  title = 'Demo FM OAUTH 2 POC';
+  greeting = {'id': 'XXX', 'content': 'Hello World'};
 }
