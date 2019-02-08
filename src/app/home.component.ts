@@ -12,6 +12,8 @@ export class HomeComponent {
 
   constructor(private app: AppService, private http: HttpClient) {
     http.get('resource').subscribe(data => this.greeting = data);
+    //http://localhost:9000
+    http.get('http://localhost:9000/resource').subscribe(data => this.greeting = data);
   }
 
   authenticated() { return this.app.authenticated; }
